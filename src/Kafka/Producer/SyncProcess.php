@@ -152,7 +152,7 @@ class SyncProcess
             }
 
             if (!isset($value['value']) || !trim($value['value'])) {
-                continue;
+                $value['value'] = null;
             }
 
             if (!isset($value['key'])) {
